@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sliminator",
+	"version": "${version}",
+	"name": "Sliminator",
+	"description": "This is a mod to detect and manipulate slime chunks!",
+	"authors": [
+		"Maksymko"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sliminator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maksymko.sliminator.Sliminator"
+		],
+		"fabric-datagen": [
+			"net.maksymko.sliminator.SliminatorDataGenerator"
+		],
+		"client": [
+			"net.maksymko.sliminator.SliminatorClient"
+		]
+	},
+	"mixins": [
+		"sliminator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
