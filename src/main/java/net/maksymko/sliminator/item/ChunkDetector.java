@@ -39,8 +39,8 @@ public class ChunkDetector extends Item {
           false
         );
       }
-      System.out.println("Is slime chunk: " + Miscellaneous.isSlimeChunk(world, context.getBlockPos()));
     }));
+    System.out.println("Is slime chunk: " + Miscellaneous.isSlimeChunk(world, context.getBlockPos()));
     return super.useOnBlock(context);
   }
 
